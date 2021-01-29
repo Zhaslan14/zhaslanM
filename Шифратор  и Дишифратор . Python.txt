@@ -1,0 +1,40 @@
+m = 'ZHASLAN'
+
+k = 'MENDYBAEV'
+
+k *= len(m) // len(k) + 1
+
+c =''
+
+
+
+for i, j in enumerate(m):
+    
+    gg = (ord(j) + ord(k[i]))
+  
+    c += chr(gg % 26 +65)
+    
+
+
+print(c)
+
+
+
+
+c = 'LLNVJBN'
+
+k = 'MENDYBAEV'
+
+d = ''
+
+
+
+for i, j in enumerate(c):
+   
+    gg = (ord(j) - ord(k[i]))
+
+    d += chr(gg % 26 +65)
+   
+
+
+print(d)
